@@ -71,16 +71,17 @@ class AdminPostsController extends Controller
         }
 
 
+            //Using relationship
 
             $user->posts()->create($input);
 
+//           dd($input);
+
+          return redirect('/admin/posts');
 
 
-        return redirect('/admin/posts');
 
 
-
-//        return $request->all();
     }
 
     /**
